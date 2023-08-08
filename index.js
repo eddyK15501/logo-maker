@@ -56,9 +56,8 @@ const promptInquirer = async () => {
                 }
             }
         ])
-    
         console.log(data)
-        
+
     } catch (error) {
         console.log(error)
     }
