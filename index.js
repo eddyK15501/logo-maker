@@ -1,4 +1,5 @@
 const inquirer = require('inquirer')
+const generateSVG = require('./lib/generateSVG')
 const validateColor = require('validate-color').default
 
 const promptInquirer = async () => {
@@ -38,7 +39,7 @@ const promptInquirer = async () => {
                 name: 'shape',
                 type: 'list',
                 message: 'Shape of the logo? Choose one of the following:',
-                choices: ['Circle', 'Triangle', 'Square']
+                choices: ['Triangle', 'Circle', 'Square']
             },
             {
                 name: 'shapeColor',
@@ -56,8 +57,10 @@ const promptInquirer = async () => {
                 }
             }
         ])
-        console.log(data)
 
+        await generateSVG(data)
+
+        console.log(data)
     } catch (error) {
         console.log(error)
     }
