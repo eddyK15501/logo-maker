@@ -24,14 +24,14 @@ const promptInquirer = async () => {
             {
                 name: 'textColor',
                 type: 'input',
-                message: 'What color would you like the text to be? (Enter a valid HTML color, hex, rgb, hsl, hwb, etc.):',
+                message: 'What color would you like the text to be?',
                 validate: (textColor) => {
                     const colorCheck = validateColor(textColor)
     
                     if (textColor && colorCheck) {
                         return true                    
                     } else {
-                        console.log('\nPlease enter a valid HTML color')
+                        console.log('\nPlease enter a valid HTML color, hex, rgb, hsl, hwb, etc.')
                         return false
                     }
                 }
@@ -45,14 +45,14 @@ const promptInquirer = async () => {
             {
                 name: 'shapeColor',
                 type: 'input',
-                message: 'What would you like the color of the shape to be? (Enter a valid HTML color, hex, rgb, hsl, hwb, etc.):',
+                message: 'What color would you like the shape to be?',
                 validate: (shapeColor) => {
                     const colorCheck = validateColor(shapeColor)
     
                     if (shapeColor && colorCheck) {
                         return true
                     } else {
-                        console.log('\nPlease a valid HTML color')
+                        console.log('\nPlease a valid HTML color, hex, rgb, hsl, hwb, etc')
                         return false
                     }
                 }
