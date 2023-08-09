@@ -1,4 +1,5 @@
 const inquirer = require('inquirer')
+const { writeFile } = require('fs').promises
 const generateSVG = require('./lib/generateSVG')
 const validateColor = require('validate-color').default
 
@@ -57,14 +58,14 @@ const promptInquirer = async () => {
                 }
             }
         ])
+        const result = generateSVG(data)
 
-        await generateSVG(data)
+        await writeFile('./examples/logo.svg', result)
 
-        console.log(data)
+        console.log('SVG logo generated!')
     } catch (error) {
         console.log(error)
     }
-
 }
 
 promptInquirer()
