@@ -65,8 +65,8 @@ const promptInquirer = async () => {
         ])
         const result = generateSVG(data)
 
-        // fs.promises.writeFile() to the ./examples folder
-        await writeFile('./examples/logo.svg', result)
+        // fs.promises.writeFile() to the ./dist folder
+        await writeFile('./dist/logo.svg', result)
 
         console.log('SVG logo generated!')
     } catch (error) {

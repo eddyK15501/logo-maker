@@ -30,11 +30,11 @@ node index.js
 
 <img width="700px" src="https://user-images.githubusercontent.com/88423414/259621458-b7829257-9c55-4c41-8028-41b5415d404b.png" />
 
-* #### Generated logo.svg file will be located in the ./examples folder
+* #### Generated logo.svg file will be located in the ./dist folder
 * #### Right-click on logo.svg
 * #### Open with Live Server or Copy Path
 
-<img width="400px" src="https://user-images.githubusercontent.com/88423414/259622732-73654a34-7c23-4fd5-b588-f27bccc9fd9f.png" />
+<img width="400px" src="https://user-images.githubusercontent.com/88423414/259627648-eca041b0-31d8-4722-8971-8bedbf69d48f.png" />
 
 * #### If Copy Path, open a browser and paste in the URL to view the generated logo.svg
 
