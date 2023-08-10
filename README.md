@@ -1,7 +1,7 @@
 # Logo Maker • [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-Node.js application that generates an SVG logo. Choose a shape, add a text, and select the colors with Inquirer.js
+Node.js application that generates an SVG logo. Choose a shape, add a text, and select the colors.
 
 ## Video Demonstration of the Application
 * [Click Here](https://github.com/eddyK15501/logo-maker/issues/2#issue-1844351588)
