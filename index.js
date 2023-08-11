@@ -13,13 +13,13 @@ const promptInquirer = async () => {
             {
                 name: 'text',
                 type: 'input',
-                message: 'Enter a text you would like to display in the logo. (Up to three characters max):',
+                message: 'Enter a text you would like to display in the logo. (Please enter 1-3 characters):',
                 validate: (letters) => {
                     // Checks to see if text inputed is within 3 characters
                     if (letters && letters.length <= 3) {
                         return true
                     } else {
-                        console.log('\nPlease enter a text for your logo (Up to three characters max)')
+                        console.log('\nPlease enter a text for your logo (between 1-3 characters)')
                         return false
                     }
                 }
